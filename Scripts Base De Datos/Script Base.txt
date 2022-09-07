@@ -1,0 +1,15 @@
+create database SistemaParqueadero;
+
+create table vehiculos (
+id int identity not null primary key,
+placa char(7),
+propietario varchar(60),
+tipovehiculo varchar(30),
+horaentrada datetime,
+horasalida datetime,
+valorpagado float,
+estado char(1)
+);
+
+select * from vehiculos;
+exec sp_columns vehiculos;
